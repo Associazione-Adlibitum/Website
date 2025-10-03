@@ -1,0 +1,14 @@
+- HTTPS
+- Aggiungere loghi in "Sostenitori":
+  - Comune
+  - [Fondazione MB](https://www.fondazionemonzabrianza.org/) perché ci ha già sostenuto
+  - [BCC](https://www.bccvallelambro.it/annuario/sportello_scheda.asp?spor=2153&abi=8901&i_menuID=47331) perché ci pagano 100€ all'anno di bollo
+- CSS: c'è troppo spazio tra <h3> e il primo paragrafo
+- Mettere foto insegnanti; qualcosa si trova online:
+  - https://images.app.goo.gl/jWVs9qG1EiWhKvaS6
+  - https://images.app.goo.gl/z9ucQpvJQRu3eJqr6
+  - https://images.app.goo.gl/txGN6nFRQG6gL3oT8
+- Nella barra in basso sistemare loghi per averli equidistanti; forse è meglio mettere Bitcoin in mezzo e ConsComo e Trinity a destra
+- Valutare se usare http://fontawesome.io/, anche per i loghi di FB e Instagram
+- Verificare se il bug report [8130](https://gitlab.gnome.org/GNOME/gnome-terminal/-/issues/8130) di GNOME Terminal, che provoca problemi di rendering con ELinks, sia stato chiuso
+- Riscrivere il sito in Python

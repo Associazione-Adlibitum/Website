@@ -1,0 +1,294 @@
+@charset "utf-8";
+/* CSS document
+ *
+ * Copyright (C) 2014-2025 by Carlo Stemberger.
+ * Released under the Creative Commons Attribution 4.0 license
+ * http://creativecommons.org/licenses/by/4.0/
+ *
+ * Made for www.associazioneadlibitum.it */
+
+@font-face {
+	font-family: Biolinum;
+	src: local("Linux Biolinum O"),
+	     url('fonts/LinBiolinum_R.woff') format('woff');
+}
+
+@font-face {
+	font-family: Biolinum;
+	src: local("Linux Biolinum O Italic"),
+	     url('fonts/LinBiolinum_RI.woff') format('woff');
+	font-style: italic;
+}
+
+@font-face {
+	font-family: Biolinum;
+	src: local("Linux Biolinum O Bold"),
+	     url('fonts/LinBiolinum_RB.woff') format('woff');
+	font-weight: bold;
+}
+
+
+/***** TEMPLATE *****/
+/* BODY */
+html, body {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background-color: #324f32; /* en:green, it:verde */
+	font-family: Biolinum, sans-serif;
+	color: #1c0b00; /* en:brown, it:marrone */
+}
+
+/* BASIC ELEMENTS */
+a {
+	text-decoration: none;
+	color: inherit;
+	border-bottom-width: 1px;
+	border-bottom-style: dashed;
+}
+
+a:active {
+	outline: none;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+}
+
+a img { border: none }
+
+h1 {
+	border-bottom-style: solid;
+	border-color: #324f32;
+}
+
+h1+dl { margin: 0; }
+
+h2 {
+	margin-bottom: 0;
+	border-bottom-style: solid;
+	border-color: #324f32;
+	border-width: thin;
+}
+
+p { margin: 0.5em 0; }
+
+p+p { margin-top: 1em; }
+
+ul, ol {
+	margin-top: 0.5em;
+	margin-bottom: 1em;
+}
+
+em {
+	font-style: normal;
+	color: #324f32;
+	font-weight: bolder;
+}
+
+abbr[title] { cursor: help; }
+
+address {
+	font-style: normal;
+	margin: 0px auto;
+	width: 400px;
+}
+
+nav {
+	margin: 20px auto 0;
+	padding: 0 20px;
+	text-align: center;
+}
+
+nav ul {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+
+nav ul li {
+	display: inline;
+	margin: 0 0.5em;
+	color: #324f32;
+}
+
+nav ul li#active_item {
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	font-weight: bold;
+}
+
+nav a { border: none; }
+
+nav a:hover {
+	border-bottom-width: 1px;
+	border-bottom-style: dashed;
+}
+
+figure > img {
+	display: block;
+	margin: 0 auto;
+	padding: 3px;
+	border: 1px solid #324f32;
+	border-radius: 4px;
+}
+
+figcaption {
+	width: 500px;
+	margin: 0 auto;
+	text-align: center;
+	font-size: small;
+}
+
+footer {
+	clear: both;
+	height: 80px;
+	background-color: #1c0b00;
+	color: white;
+	text-align: left;
+	font-size: small;
+	position: relative;
+}
+
+/* SPECIFIC DIVS */
+/* header */
+#header {
+	/* height of the logo: 180px */
+	margin: 60px 0; /* (180 - 80)/2 + 10 */
+	background-color: white;
+	height: 80px;
+	min-width: 540px; /* 500 (photo) + 20*2 (padding) */
+}
+
+#header img {
+	display: block;
+	margin: 0 auto;
+	position: relative;
+	top: -50px;
+}
+
+/* container */
+#container {
+	margin: 10px auto 0;
+	background-color: white;
+	width: 94%;
+	max-width: 780px;
+	min-width: 548px; /* 500+8 (photo) + 20*2 (padding) */
+	border-top-left-radius: 15px;  /* FIXME: not perfect (some white pixels) */
+	border-top-right-radius: 15px; /* FIXME: ↑ */
+}
+
+#motto {
+	text-align: center;
+	font-size: large;
+	font-style: italic;
+	padding: 10px 20px;
+	background-color: #1c0b00;
+	color: white;
+	border-top-left-radius: 15px;
+	border-top-right-radius: 15px;
+}
+
+#content {
+	padding: 20px;
+	line-height: 1.5;
+}
+
+#socialcontainer {
+	/* this is more or less a copy of figure > img */
+	display: block;
+	width: 500px;
+	margin: 0 auto;
+	padding: 3px;
+	border: 1px solid #324f32;
+	border-radius: 4px;
+}
+
+#mapcontainer {
+	/* this is more or less a copy of figure > img */
+	display: block;
+	width: 500px;
+	height: 300px;
+	margin: 0 auto;
+	padding: 3px;
+	border: 1px solid #324f32;
+	border-radius: 4px;
+}
+
+#map {
+	width: 100%;
+	height: 100%;
+}
+
+#map a { border-bottom-style: initial; }
+
+#center { text-align: center; }
+
+#left { float: left; }
+
+#right { float: right; }
+
+/* footer */
+#logos {
+	position: absolute;
+	top: 15px;
+	left: 20px;
+}
+
+#logos a { border: none; }
+
+
+/* CLASSES */
+.photo img {
+	display: block;
+	margin: 0 auto;
+	padding: 3px;
+	border: 1px solid #324f32;
+	border-radius: 4px;
+}
+
+.photo dd {
+	width: 500px;
+	margin: 0 auto;
+	text-align: center;
+	font-size: small;
+}
+
+.bottom {
+	margin: 0;
+	position: absolute;
+	bottom: 1em;
+	right: 20px;
+}
+
+.download {
+	background-color: #d2d2d2; /* gray 20% */
+	padding: 5px 20px;
+	border-radius: 15px;
+	font-size: small;
+}
+
+.download ul {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+
+.download ul li {
+	height: 53px; /* 48 + 5 */
+	line-height: 53px;
+}
+
+.download a {
+	float: left;
+	color: #324f32;
+	font-weight: bold;
+	border: none;
+	width: 18em; /* for aligning "kB" */
+	padding-left: 58px; /* space for the icon: 48 + 10 */
+	background: url(../images/icons/default_icon.png) no-repeat center left; /* FIXME: missing default_icon.png */
+}
+
+.download a[href$=".pdf"] { background: url(../images/icons/pdf_icon.png) no-repeat center left; }
+
+.download a:hover { color: #006600; }

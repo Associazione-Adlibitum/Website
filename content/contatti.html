@@ -1,0 +1,37 @@
+				<script src="http://cdn.leafletjs.com/leaflet/v0.7.7/leaflet.js"></script>
+				<figure>
+					<div id="mapcontainer">
+						<div id="map"></div>
+<script>
+var map = L.map('map').setView([45.725, 9.2796], 17);
+
+L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
+    attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
+}).addTo(map);
+
+L.marker([45.7252046, 9.2798892]).addTo(map)
+    .bindPopup('Scuola di musica');
+L.marker([45.7242169, 9.2786869]).addTo(map)
+    .bindPopup('Sede dell\'associazione')
+    .openPopup();
+</script>
+					<!-- end mapcontainer --></div>
+				</figure>
+				<address><!-- TODO: https://it.wikipedia.org/wiki/HCard -->
+					<div id="left">
+						<em>Associazione Ad libitum</em><br />
+						Via Umberto I, 80<br />
+						20838 Renate (MB)<br />
+						C.F.: 91133560150<br />
+						Telefono: <a href="tel:+393334200593" title="Contattaci">333 4200593</a><br />
+						e-mail: <a href="mailto:info@associazioneadlibitum.it" title="Contattaci">info@associazioneadlibitum.it</a><br />
+						<br />
+					<!-- end left --></div>
+					<div id="right">
+						<em>Scuola di musica</em><br />
+						Via Umberto I, 6<br />
+						20838 Renate (MB)<br />
+						<a href="geo:45.7252046,9.2798892">Mappa</href>
+					<!-- end right --></div>
+				</address>
+
